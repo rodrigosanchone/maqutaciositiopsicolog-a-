@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-secundary: red,
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    height: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1{
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.btn {
+    background: #9167f4;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-color: #9167f4;
+    border-radius: 0;
+}
+
+.btn a::after {
+    content: "   >";
+    display: none;
+}
+
+.btn a:hover::after {
+    display: inline;
+}
+
+
+.btn:hover {
+    background: #9167f4 !important;
+    border-color: #9167f4 !important;
+
+}
+
+.btn a {
+    color: #e2e2e2;
+}
+
+
+
+
+
+/**navegacion**/
+.navbar-nav {
+    justify-content: center;
+   
+}
+
+
+
+/**main*/
+.main {
+    background: rgb(220, 216, 216);
+}
+
+/**bg banner1*/
+.bg {
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 600px;
+    background-image: url('../img/banner1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/**cuadro de texto  de banner*/
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Puedes cambiar el valor de translateZ para darle más o menos profundidad al texto */
+    transform: translateZ(50px);
+    text-align: center;
+}
+
+.text h2 {
+    font-family: 'Taviraj', Georgia, "Times New Roman", serif;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.text p {
+    margin: 10px 100px;
+    line-height: 1.8em;
+    font-size: 17px;
+    line-height: 1.8em;
+    max-width: 800px;
+    word-wrap: break-word;
+}
+
+/*info*/
+
+.info {
+    width: 90%;
+    margin: -50px 5% 0 5%;
+    background-color: #fff;
+    padding: 5% 10%;
+}
+
+.info-text {
+    background-color: rgb(247, 247, 247)
+}
+
+.info h2 {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Taviraj', Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+/*acordeon*/
+.accordion-item {
+    background-color: rgb(247, 247, 247) !important;
+    padding: 0 !important;
+}
+
+
+
+.accordion-button {
+    background-color: rgb(247, 247, 247) !important;
+  
+}
+
+
+
+
+
+.accordion-button::after {
+    content: "+";
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: auto;
+    width: 15px!important;
+    height: 15px!important;
+    position: relative;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    display: none;
+
+}
+
+.accordion-item {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  
+  /* Para asegurarte de que el borde superior e inferior se mantengan */
+ 
+
+
+
+.accordion-header {
+    padding: 0rem 1rem !important;
+    /* Ajusta el relleno dentro del encabezado del acordeón */
+}
+
+.accordion-body {
+    padding: 0 !important;
+    /* Ajusta el relleno dentro del cuerpo del acordeón */
+}
+
+
+
+@media(max-width:1300px){
+   
+}
+
+
+
+
+
+@media(max-width:992px) {
+
+    .bg {
+        padding: 25px 0;
+        height: 400px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text h2 {
+        font-size: 28px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+
+    }
+
+    .text p {
+        margin: 10px 100px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-size: 12px;
+
+    }
+
+
+
+}
+
+
+
+
+@media(max-width:768px) {}
+
+
+
+
+@media(max-width:575px) {}
